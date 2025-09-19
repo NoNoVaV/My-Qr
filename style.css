@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  max-width: 350px;
+  margin: 12px 0;
+  padding: 15px;
+  border-radius: 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.1); /* transparent + glass */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: 0.3s;
+}
+
+.btn img {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+/* Remove solid color overrides */
+.facebook,
+.tiktok,
+.instagram,
+.telegram {
+  background: rgba(255, 255, 255, 0.1); /* Keep glass effect */
+}
